@@ -15,8 +15,8 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Inter', sans-serif;
+$ff-title	: 'Onest', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
@@ -26,7 +26,6 @@ $fs-lg	: 18px;
 $fs-xl	: 20px;
 
 // Font weights.
-$fw-light	: 300;
 $fw-regular	: 400;
 $fw-medium	: 500;
 $fw-semibold: 600;
