@@ -22,6 +22,7 @@ body {
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto
 }
@@ -30,6 +31,17 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none
+}
+
+button {
+	border: 0;
+	background-color: transparent;
+}
+
+fieldset,form, input {
+	border: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .wrapper {
@@ -42,5 +54,32 @@ ul {
 
 	.footer {
 		margin-top: auto
+	}
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $white;
+	border-radius: 100px;
+	color: #0F0F0F;
+	font-family: $ff;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%;
+	padding: 14px 30px;
+	white-space: nowrap;
+	transition: background-color ease $tr,
+		opacity ease $tr;
+	cursor: pointer;
+
+	&:hover {
+		background-color:#CACACA; 
+	}
+
+	&:active {
+		opacity: 0.4;
 	}
 }
