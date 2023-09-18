@@ -1,10 +1,20 @@
 .hero {
-	padding: 100px 0;
+	padding: 40px 0 80px;
 	background-color: $black;
-	background-position: center;
-	background-size: cover;
+	background-position: center top;
+	background-size: 100%;
 	background-repeat: no-repeat;
-	background-image: url('../img/bg.png');
+	background-image: url('../img/bg-mobile.png');
+
+	@media all and (min-width: $md) {
+		background-position: center;
+		background-image: url('../img/bg.png');
+		background-size: cover;
+	}
+
+	@media all and (min-width: $lg) {
+		padding: 100px 0;
+	}
 
 	&__inner {
 		display: flex;
@@ -13,44 +23,63 @@
 
 	&__heading {
 		display: flex;
-		align-items: flex-start;
-		margin-bottom: 100px;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 60px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 100px;
+			flex-direction: row;
+			align-items: flex-start;
+			text-align: left;
+		}
 	}
 
 	&__info {
 		width: 100%;
 		max-width: 526px;
+
+		.button__wrapper {
+			.button {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
 	}
 
 	.h1 {
 		width: 100%;
 		max-width: 636px;
-		margin-right: 134px;
+
+		@media all and (min-width: $lg) {
+			margin-right: 134px;
+		}
 	}
 
 	.h2 {
 		color: $white;
 		font-family: $ff-title;
-		font-size: 32px;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 120%;
 		margin-bottom: 20px;
-		padding-right: 10%;
+
+		@media all and (min-width: $lg) {
+			font-size: 32px;
+			padding-right: 10%;
+		}
 	}
 
 	&__info_text {
 		color: $white;
 		font-family: $ff;
-		font-size: 18px;
+		font-size: 16px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 120%;
 		margin-bottom: 40px;
-
-		@media all and (min-width: 570px) {
-			font-size: 16px;
-		}
 
 		@media all and (min-width: $lg) {
 			font-size: 18px;
@@ -64,9 +93,10 @@
 	}
 
 	&__card {
-		width: calc(100% / 4);
+		width: calc(100% / 1);
 		padding: 0 12px;
-		height: 210px;
+		height: 195px;
+		margin-bottom: 24px;
 
 		&_inner {
 			display: flex;
@@ -85,7 +115,17 @@
 			position: relative;
 		}
 
+		@media all and (min-width: 570px) {
+			width: calc(100% / 2);
+		}
+
+		@media all and (min-width: $lg) {
+			width: calc(100% / 4);
+			height: 210px;
+		}
+
 		.hero__gold {
+			display: none;
 			position: absolute;
 			right: -35%;
 			bottom: 90%;
@@ -123,9 +163,13 @@
 	&__inner_text {
 		color: $white;
 		font-family: $ff;
-		font-size: 18px;
+		font-size: 16px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 120%;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 	}
 }

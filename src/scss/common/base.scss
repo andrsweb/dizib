@@ -82,4 +82,9 @@ fieldset,form, input {
 	&:active {
 		opacity: 0.4;
 	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+	}
 }

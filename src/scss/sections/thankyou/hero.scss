@@ -1,11 +1,14 @@
 .hero-thankyou {
-	padding: 100px 0 120px;
+	padding: 40px 0 80px;
 	background-color: $black;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('../img/bg.png');
-	// min-height: calc(100vh - 140px);
+
+	@media all and (min-width: $lg) {
+		padding: 100px 0 120px;
+	}
 
 	.h1 {
 		text-align: center;

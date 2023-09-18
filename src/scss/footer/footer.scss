@@ -6,7 +6,12 @@
 		padding-top: 40px;
 		border-top: 1px solid #2B2B2B;;
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&__text, &__mail, &__link {
@@ -22,5 +27,13 @@
 	&__mail {
 		text-transform: lowercase;
 		margin-top: 10px;
+	}
+
+	&__link {
+		margin-top: 20px;
+
+		@media all and (min-width: $lg) {
+			margin-top: 0;
+		}
 	}
 }
