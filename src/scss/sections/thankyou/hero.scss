@@ -1,10 +1,14 @@
 .hero-thankyou {
-	padding: 40px 0 80px;
+	padding: 40px 0 100px;
 	background-color: $black;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('../img/bg.png');
+
+	@media all and (min-width: 576px) {
+		padding: 80px 0 100px;
+	}
 
 	@media all and (min-width: $lg) {
 		padding: 100px 0 120px;
@@ -14,28 +18,46 @@
 		text-align: center;
 		width: 100%;
 		max-width: 856px;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
+		font-size: 32px;
+
+		@media all and (min-width: 570px) {
+			font-size: 42px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 84px;
+			margin-bottom: 60px;
+		}
 	}
 
 	.h2 {
 		color: $white;
 		text-align: center;
 		font-family: $ff;
-		font-size: 32px;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 120%;
 		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 32px;
+		}
 	}
 
 	&__text {
 		color: $white;
 		text-align: center;
 		font-family: Inter;
-		font-size: 18px;
+		font-size: 16px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 120%;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 	}
 
 	&__wrapper {
