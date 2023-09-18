@@ -1,0 +1,26 @@
+.footer {
+	background-color: #0F0F0F;
+	padding: 0 0 50px;
+
+	&__wrapper {
+		padding-top: 40px;
+		border-top: 1px solid #2B2B2B;;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__text, &__mail, &__link {
+		color: $white;
+		font-family: $ff;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+
+	&__mail {
+		text-transform: lowercase;
+		margin-top: 10px;
+	}
+}
